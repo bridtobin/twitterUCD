@@ -1,0 +1,257 @@
+@charset "utf-8";
+@import url("reset.css");
+
+/* CSS Document */
+
+*{
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 10;
+    color: inherit;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.error {
+	color: #F00;
+}
+
+.borderClass {
+	border: 10px solid transparent;
+}
+
+.submitButton {
+  height:50px;
+  width:300px;
+}
+strong {font-weight: bold;
+		
+}
+.submitSmallButton {
+	width: 100px;
+	height: 30px;
+}
+
+.smallItalicFont {
+	font-size:12px;
+	font-style:italic;
+	display:inline;
+}
+
+input[type="submit"] {
+  font-size:18px;
+  color:#000;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+/*  border: 5px solid #03C;*/
+}
+
+
+
+
+
+h5 {padding:0px;
+	margin:5px;
+}
+
+
+iframe {border:thin;
+}
+
+
+#wrapper {
+    background-image: url("twitter_bird_grey.png") ;
+    background-color: #cccccc;
+	width: 100%;
+/*	background-color:#FFF;
+    background: #EEE;*/
+	height:625px;
+	overflow:auto;
+	min-width:1400px;
+    color: #666;
+}
+
+
+#header {
+	font-family:Verdana;
+	font-weight:200;
+	float: left;
+	height: auto;
+	width: 100%;
+	height: auto;
+/*	background-color: #FFF; */
+	color: #000;
+	/*margin: 0;*/
+	min-width:1100px;
+	overflow:hidden;
+}
+
+
+
+#inputDiv {
+	float: left;
+	width: 50%;
+	height: auto;
+    background-color: #00E;
+    padding: 10px;
+    font: 16px Georgia, "Times New Roman", Times, serif;
+/*    color: #666;*/
+	color: #FFF;
+	margin-left:14px;
+
+/*    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DADADA; */
+/*	border:	solid 1px #222; */
+}
+
+#listDiv {
+	float: left;
+	width: 100%;
+	height: auto;
+    background-color: #00E;
+    padding: 10px;
+    font: 16px Georgia, "Times New Roman", Times, serif;
+/*    color: #666;*/
+	color: #000;
+/*	margin-left:14px;*/
+
+/*    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DADADA; */
+/*	border:	solid 1px #222; */
+}
+
+#listDiv input[type="text"]{
+	width:1350px;	
+}
+
+
+
+
+
+.wrapResult {
+	float: left;
+	width: 100%;
+	height: 300px;
+	overflow: auto ;
+/*    background: #FFF;*/
+    padding: 10px;
+    font: 16px Georgia, "Times New Roman", Times, serif;
+    color: #666;
+/*    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DADADA; */
+	border:	solid 1px #222; 
+}
+
+input[type="text"] {
+	height:30px;
+	font-size:18px;
+	color:#000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+input[type="password"] {
+	height:30px;
+	width:200px;
+	font-size:18px;
+	color:#000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#inputDiv input[type="text"]{
+	width:200px;	
+}
+
+#footer {
+	float: left;
+	height:auto;
+	width: 100%;
+	background-color: #066;
+	color: #FFF;
+	left: 0;
+	bottom: 0;
+	position:fixed;
+}
+
+
+#wrapper #header .pagename {
+	margin-left:14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size:36px;
+	font-weight:400;
+}
+
+
+#chart_div {
+	float: left;
+	width: 30%;
+	height: auto;
+    background: #FFF; 
+/*    padding: 10px; */
+    font: 16px Georgia, "Times New Roman", Times, serif;
+    color: #666;
+/*    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DADADA;*/
+}
+
+#mydiv {
+	float: left;
+	width: 75%;
+	height: auto;
+/*    background: #FFF;*/
+    padding: 10px;
+    font: 16px Georgia, "Times New Roman", Times, serif;
+    color: #000;
+/*    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DADADA;*/
+
+}
+#wrapTop {
+    background-color: #FFF;
+	width:100%;
+	height:auto;
+}
+
+#listTweets {
+	width: 1000px;
+	overflow:auto;		
+}
+#mydiv option {
+	width: 10;
+}
+
+#waitBar {
+	width:  300px;
+	height:	30px;
+	border:	solid 1px #222; 
+	visibility:hidden;
+}
+
+
+#tweetbreakdown {
+	float: left;
+	width: 22%;
+	height:auto;
+/*	background: #FFF;*/
+	padding: 10px;
+    font: 16px Georgia, "Times New Roman", Times, serif;
+    color: #000;
+}
+
+
+#chart_div .button {
+	float:left;
+    background: #066;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+}
+
+#chart_div .button:hover {
+    background: #CF7A7A
+}
+
+
