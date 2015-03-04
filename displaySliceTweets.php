@@ -32,7 +32,8 @@ switch ($q) {
 	}
 //The session variable holding the database connection does not seem to hold when calling this program.  Session variables with primitive types
 //seem to exist but not object variables.  We therefore have to open the database connection again.
-$_SESSION['dbconnection'] = new mysqli("csserver.ucd.ie","bdelap", "uryafql1", "bdelap");
+// Use server url, user name, user password and database name
+$dbconnection = new mysqli("server","user", "password", "database name");
 if(!$_SESSION['dbconnection']) {
 	die('Connection failed: ' . $_SESSION['dbconnection']->error());
 }

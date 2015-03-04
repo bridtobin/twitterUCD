@@ -1,8 +1,8 @@
 <!--Temporary php program used to import data text files-->
 <?php
 ini_set('max_execution_time', 0); 
-
-$dbconnection = new mysqli("csserver.ucd.ie","bdelap", "uryafql1", "bdelap");
+// Use server url, user name, user password and database name
+$dbconnection = new mysqli("server","user", "password", "database name");
 	if(!$dbconnection) {
 		die('Connection failed: ' . $dbconnection->error());
 	}

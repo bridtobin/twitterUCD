@@ -7,7 +7,8 @@ and recalculating sentiment probability-->
 </head>
 <body>
 <?php
-$dbconnection = new mysqli("csserver.ucd.ie","bdelap", "uryafql1", "bdelap");
+// Use server url, user name, user password and database name
+$dbconnection = new mysqli("server","user", "password", "database name");
 if(!$dbconnection) {
 	die('Connection failed: ' . $dbconnection->error());
 }

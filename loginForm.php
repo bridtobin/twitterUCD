@@ -38,7 +38,7 @@ function ConfirmTrainClassifier()    {
 <br><br>
 <?php 
 if(!empty($_POST['loginButton'])) {
-	$dbconnection = new mysqli("csserver.ucd.ie",$_POST['userName'], $_POST['passwordField'], "bdelap");
+	$dbconnection = new mysqli("[insert server name]",$_POST['userName'], $_POST['passwordField'], "[insert database name]");
 	if ($dbconnection->connect_error) {
 		echo "Login Failed. Please Try again" ;
 		$_SESSION['loggedIn']=0 ;

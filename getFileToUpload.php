@@ -60,7 +60,8 @@ function validateInput() {
 if (!empty($_POST['uploadButton'])) { 
 	ini_set('max_execution_time', 0); 
 	include_once "functionFile.php" ;
-	$_SESSION['dbconnection'] = new mysqli("csserver.ucd.ie","bdelap", "uryafql1", "bdelap");
+    // Use server url, user name, user password and database name
+    $_SESSION['dbconnection']  = new mysqli("server","user", "password", "database name");
 	if(!$_SESSION['dbconnection']) {
 		die('Connection failed: ' . $_SESSION['dbconnection']->error());
 	}

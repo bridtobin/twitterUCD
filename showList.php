@@ -1,7 +1,8 @@
 <?php
 /*Program to control the adding, edit and removing of records from corpusTraining, lexicon and stop words*/
 session_start();
-$dbconnection = new mysqli("csserver.ucd.ie","bdelap", "uryafql1", "bdelap");
+//connect to database replace the names below
+$dbconnection = new mysqli("server","user", "password", "database name");
 if(!$dbconnection) {
 	die('Connection failed: ' . $dbconnection->error());
 }

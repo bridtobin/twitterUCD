@@ -5,8 +5,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 ini_set('max_execution_time', 0); 
 include_once "functionFile.php" ;
-//connect to database
-$dbconnection = new mysqli("csserver.ucd.ie","bdelap", "uryafql1", "bdelap");
+// Use server url, user name, user password and database name
+$dbconnection = new mysqli("server","user", "password", "database name");
 if(!$dbconnection) {
 	die('Connection failed: ' . $dbconnection->error());
 }

@@ -5,7 +5,8 @@ include_once "evalfunctionFile.php" ;
 $featureList=array();
 $tweetFeatures=array();
 //Add stopwords to array
-$dbconnection = new mysqli("csserver.ucd.ie","bdelap", "uryafql1", "bdelap");
+// Use server url, user name, user password and database name
+$dbconnection = new mysqli("server","user", "password", "database name");
 if(!$dbconnection) {
 	die('Connection failed: ' . $dbconnection->error());
 }

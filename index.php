@@ -5,7 +5,8 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 ini_set('max_execution_time', 0); 
-$dbconnection = new mysqli("csserver.ucd.ie","bdelap", "uryafql1", "bdelap");
+//connect to database replace the names below
+$dbconnection = new mysqli("server","user", "password", "database name");
 if(!$dbconnection) {
 	die('Connection failed: ' . $dbconnection->error());
 }
